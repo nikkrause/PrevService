@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*CSS RESET*/
+
+@media print {
+*:not(body){position:relative !important;}
+header, footer, button, #TO_TOP, #SERVICE button, .no-print {display:none !important;}
+.print-only {display:block !important;}
+a, span, strong, abbr, em, b, i {display: inline !important;}
+h2>img.print-only {display:inline !important; margin-bottom:-10px; margin-left:-1px; width:60px !important;}
+h2 {page-break-after:avoid !important; break-after:avoid !important;}
+* {-webkit-column-count:auto !important; -moz-column-count:auto !important; -o-column-count:auto !important; column-count:auto !important;box-shadow:none !important; overflow:visible !important; position:relative !important; height:auto !important; min-height:0px !important; max-height:none !important;}
+main #SERVICE #WRAPPER, main #RESOURCES, main #FAQ, main #DISCLAIMERS, article, section {background-color:#FFFFFF !important; border:none !important;}
+main #DISCLAIMERS {color:#000000 !important; margin-top:50px !important;}
+main #DISCLAIMERS h2 {color:#000000 !important;}
+* a::after {content:' ('attr(href)')' !important; font-size:13px !important;}
+a.noURL::after {content:'' !important;}
+#PRINT_STACK {width:100% !important; left:0px !important;}
+.note>strong {font-weight:bold; position:absolute !important; left:-60px;}
+.disclaimer {font-size:85%; margin-top:50px;}
+	
+main #SERVICE #WRAPPER>div, main #FAQ div {/*-webkit-column-break-inside:auto; page-break-inside:auto; break-inside:avoid;*/}
+}

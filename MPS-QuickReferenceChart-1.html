@@ -1,0 +1,416 @@
+<!doctype html>
+<!--[if lt IE 9]> <html lang="en-us" class="no-js oldie"> <![endif]-->
+<html class="no-js" lang="en">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="Preventive Services Chart. Learn about codes; who is covered; frequency; and what the Medicare beneficiary pays.">
+<meta name="keywords" content="Initial Preventive Physical Examination,IPPE,Annual Wellness Visit,AWV,ultrasound screening for abdominal aortic aneurysm,AAA,cardiovascular disease,CDV,blood tests,diabetes self-management training,DSMT,medical nutrition therapy,MNT,pap,pelvic examination">
+<meta name="author" content="CMS/CM/PCG/DPIPD">
+
+<title>Preventive Services Chart | Medicare Learning Network&reg; | ICN 006559</title>
+<!-- Version 021618 -->
+
+<!--///////////////////////
+CSS LINKS
+//////////////////////// -->
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet" type="text/css"> 
+<!--<link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet" type="text/css">-->
+<link href="css/pscStyles.css" rel="stylesheet" type="text/css">
+<!--<link href="css/905709styles.css" rel="stylesheet" type="text/css">-->
+<link href="css/print.css" rel="stylesheet" type="text/css">
+<!--///////////////////////
+JS LINKS
+////////////////////////-->
+<script src="scripts/jquery-1.10.2.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<!-- <script src="//tags.tiqcdn.com/utag/cmsgov/cms-www/prod/utag.sync.js"></script> -->
+
+</head>
+
+<body>
+<!-- <script type="text/javascript">
+	(function(t,e,a,l,i,u,m){
+			t="cms-www";
+			e=/^(www\.)?cms.gov/;
+			a=(e).test(window.location.hostname)?'prod':'dev';l='//tags.tiqcdn.com/utag/cmsgov/'+t+'/'+a+'/utag.js';i=document;u='script';m=i.createElement(u);m.src=l;m.type='text/java'+u;m.async=true;l=i.getElementsByTagName(u)[0];l.parentNode.insertBefore(m,l);
+	})();
+</script> -->
+
+	<header class="shrinkBG">
+  	
+    <img src="images/MLN_Header_Flourish.png" alt="">
+		<img src="images/MLN_Header_Text.png" alt="MLN Educational Tool: Knowledge, Resources, Training">
+    
+      <aside id="PLEASE_NOTE" aria-expanded="true" tabindex="-1">
+    	<button type="button" id="PLEASE_NOTE_CLOSE" title="Close This Introduction"><span>&#9662;</span> <span>CLOSE</span></button>
+    	<p id="INTRO">This educational tool will help you properly furnish and bill Medicare preventive services with information by service that includes:</p>
+    	
+		<ul>
+			<li>A link to the National Coverage Determination (NCD) webpage for the service, if it applies</li>
+			<li>HCPCS/Current Procedural Terminology (CPT) codes</li>
+			<li>International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) diagnosis codes</li>
+			<li>Coverage requirements</li>
+			<li>Frequency requirements</li>
+			<li>Medicare beneficiary liability</li>
+		</ul>
+		
+      <p class="note"><strong>NOTE:</strong> When you request the Medicare eligibility status of a beneficiary, the Centers for Medicare &amp; Medicaid Services (CMS) provides the dates a beneficiary may receive many of these preventive services. If you are not able to get this data, contact your eligibility service provider. Refer to the Frequently Asked Questions section of this document for information on how to request the next eligible date.</p>
+      <p id="ICN">ICN 006559 June 2018</p>
+    </aside>
+    
+    
+  	<!--<div id="LOGO">
+      <img src="images/Medicare-Learning-Network-Logo-125.png" alt="Medicare Learning Network&reg;">
+    </div>-->
+    <nav class="bottomBorder">
+    	<!--<span id="HHS">DEPARTMENT OF HEALTH AND HUMAN SERVICES<br>Centers for Medicare &amp; Medicaid Services</span>-->
+      <h1>
+        MEDICARE PREVENTIVE SERVICES
+      </h1>
+      
+      <a href="#SERVICE" id="SKIPPER" tabindex="0">Skip to the main content</a>
+      
+        <ul id="SERVICES" class="closed" role="menu" tabindex="-1">
+        	<li id="TELEHEALTH">
+          	<p><strong>Target Audience:</strong> Medicare Fee-For-Service Providers <br>Watch the <a href="https://www.youtube.com/watch?v=-tuMWM4KeZg" tabindex="0" target="_blank">CMS Provider Minute: Preventive Services video</a> for pointers to help you submit sufficient documentation when billing for certain preventive services. <br>You may provide some preventive services <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243327.html" tabindex="0" target="_blank">via telehealth</a> where you see the following symbol:<img src="images/Telehealth-Service.png" alt="Telehealth Service Icon"></p>
+          </li>
+          <li><button type="button" id="ALC_MISUSE" class="telehealthButton" title="View Codes and Information About Alcohol Misuse Screening and Counseling" tabindex="0">Alcohol Misuse Screening and <span class="noWrap">Counseling <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="AWV" class="telehealthButton" title="View Codes and Information About the Annual Wellness Visit (AWV)" tabindex="0">Annual Wellness <span class="noWrap">Visit (AWV) <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="BONE_MASS" title="View Codes and Information About Bone Mass Measurements" tabindex="0">Bone Mass Measurements</button></li>
+          <li><button type="button" id="CARDIO_DIS" title="View Codes and Information About Cardiovascular Disease Screening Tests" tabindex="0">Cardiovascular Disease Screening Tests</button></li>
+          <li><button type="button" id="COLO_CAN" title="View Codes and Information About Colorectal Cancer Screening" tabindex="0">Colorectal Cancer Screening</button></li>
+          <li><button type="button" id="TOBACCO" class="telehealthButton" title="View Codes and Information About Counseling to Prevent Tobacco Use" tabindex="0">Counseling to Prevent Tobacco <span class="noWrap">Use <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="DEPRESSION" class="telehealthButton" title="View Codes and Information About Depression Screening" tabindex="0">Depression <span class="noWrap">Screening <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="DIABETES" title="View Codes and Information About Diabetes Screening" tabindex="0">Diabetes Screening</button></li>
+          <li><button type="button" id="DIABETES_SELF" class="telehealthButton" title="View Codes and Information About Diabetes Self-Management Training (DSMT)" tabindex="0">Diabetes Self-Management <span class="noWrap">Training (DSMT) <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="GLAUCOMA" title="View Codes and Information About Glaucoma Screening" tabindex="0">Glaucoma Screening</button></li>
+          <li><button type="button" id="HEP_B_SCREEN" title="View Codes and Information About Hepatitis B Virus (HBV) Screening" tabindex="0">Hepatitis B Virus (HBV) Screening</button></li>
+          <li><button type="button" id="HEP_B" title="View Codes and Information About Hepatitis B Virus (HBV) Vaccine and Administration" tabindex="0">Hepatitis B Virus (HBV) Vaccine and Administration</button></li>
+          <li><button type="button" id="HEP_C" title="View Codes and Information About Hepatitis C Virus (HCV) Screening" tabindex="0">Hepatitis C Virus (HCV) Screening</button></li>
+          <li><button type="button" id="HIV" title="View Codes and Information About Human Immunodeficiency Virus (HIV) Screening" tabindex="0">Human Immunodeficiency Virus (HIV) Screening</button></li>
+          <li><button type="button" id="FLU" title="View Codes and Information About Influenza Virus Vaccine and Administration" tabindex="0">Influenza Virus Vaccine and Administration</button></li>
+          <li><button type="button" id="IPPE" title="View Codes and Information About the Initial Preventive Physical Examination (IPPE)" tabindex="0">Initial Preventive Physical Examination (IPPE)</button></li>
+          <li><button type="button" id="CARDIO_IBT" class="telehealthButton" title="View Codes and Information About Intensive Behavioral Therapy (IBT) for Cardiovascular Disease (CVD)" tabindex="0">Intensive Behavioral Therapy (IBT) for Cardiovascular <span class="noWrap">Disease (CVD) <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="OBESITY_IBT" class="telehealthButton" title="View Codes and Information About Intensive Behavioral Therapy (IBT) for Obesity" tabindex="0">Intensive Behavioral Therapy (IBT) for <span class="noWrap">Obesity <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+					<li><button type="button" id="LUNG_CAN" class="telehealthButton" title="View Codes and Information About Lung Cancer Screening Counseling and Annual Screening for Lung Cancer With Low Dose Computed Tomography (LDCT)" tabindex="0">Lung Cancer Screening Counseling and Annual Screening for Lung Cancer With Low Dose Computed Tomography <span class="noWrap">(LDCT) <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="MNT" class="telehealthButton" title="View Codes and Information About Medical Nutrition Therapy (MNT)" tabindex="0">Medical Nutrition <span class="noWrap">Therapy (MNT) <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="PNEUMO" title="View Codes and Information About Pneumococcal Vaccine and Administration" tabindex="0">Pneumococcal Vaccine and Administration</button></li>
+          <li><button type="button" id="PROSTATE_CAN" title="View Codes and Information About Prostate Cancer Screening" tabindex="0">Prostate Cancer Screening</button></li>
+          <li><button type="button" id="CERV_CAN" title="View Codes and Information About Screening for Cervical Cancer with Human Papillomavirus (HPV) Tests" tabindex="0">Screening for Cervical Cancer with Human Papillomavirus (HPV) Tests</button></li>
+					<li><button type="button" id="STI" class="telehealthButton" title="View Codes and Information About Screening for Sexually Transmitted Infections (STIs) and High Intensity Behavioral Counseling (HIBC) to Prevent STIs" tabindex="0">Screening for Sexually Transmitted Infections (STIs) and High Intensity Behavioral Counseling (HIBC) to Prevent <span class="noWrap">STIs <img src="images/Telehealth-Service.png" alt="This is a Telehealth Service" ></span></button></li>
+          <li><button type="button" id="MAMMO" title="View Codes and Information About Screening Mammography" tabindex="0">Screening Mammography</button></li>
+          <li><button type="button" id="PAP" title="View Codes and Information About Screening Pap Tests" tabindex="0">Screening Pap Tests</button></li>
+          <li><button type="button" id="PELVIC" title="View Codes and Information About Screening Pelvic Examinations" tabindex="0">Screening Pelvic Examinations (includes a clinical breast examination)</button></li>
+          <li><button type="button" id="ULTRASOUND" title="View Codes and Information About Ultrasound Screening for Abdominal Aortic Aneurysm (AAA)" tabindex="0">Ultrasound Screening for Abdominal Aortic Aneurysm (AAA)</button></li>
+        </ul>
+      
+      <form id="SERVICES_SELECT" tabindex="0" aria-hidden="true" name="SERVICES_SELECT">
+      	<button type="button" id="CLOSE_MENU" title="Close the Select Menu" tabindex="0" onClick="closeServiceMenu()">Close Menu</button>
+      	<h2>SELECT A SERVICE</h2>
+        <ul id="SEL_MENU" role="menu">
+        	<li id="DEFAULT" title="Select One of the Services Below" role="menuitem" tabindex="0">Select a Service</li>
+          <li id="ALC_MISUSE_2" class="telehealthButton" title="View Codes and Information About Screening and Counseling Interventions in Primary Care to Reduce Alcohol Misuse" role="menuitem" tabindex="0">*Alcohol Misuse Screening and Counseling</li>
+          <li id="AWV_2" class="telehealthButton" title="View Codes and Information About the Annual Wellness Visit" role="menuitem" tabindex="0">*Annual Wellness Visit (AWV)</li>
+          <li id="BONE_MASS_2" title="View Codes and Information About Bone Mass Measurements" role="menuitem" tabindex="0">Bone Mass Measurements</li>
+          <li id="CARDIO_DIS_2" title="View Codes and Information About Cardiovascular Disease Screening Tests" role="menuitem" tabindex="0">Cardiovascular Disease Screening Tests</li>
+          <li id="COLO_CAN_2" title="View Codes and Information About Colorectal Cancer Screening" role="menuitem" tabindex="0">Colorectal Cancer Screening</li>
+          <li id="TOBACCO_2" class="telehealthButton" title="View Codes and Information About Counseling to Prevent Tobacco Use" role="menuitem" tabindex="0">*Counseling to Prevent Tobacco Use</li>
+          <li id="DEPRESSION_2" class="telehealthButton" title="View Codes and Information About Depression Screening" role="menuitem" tabindex="0">*Depression Screening</li>
+          <li id="DIABETES_2" title="View Codes and Information About Diabetes Screening" role="menuitem" tabindex="0">Diabetes Screening</li>
+          <li id="DIABETES_SELF_2" class="telehealthButton" title="View Codes and Information About Diabetes Self-Management Training" role="menuitem" tabindex="0">*Diabetes Self-Management Training (DSMT)</li>
+          <li id="GLAUCOMA_2" title="View Codes and Information About Glaucoma Screening" role="menuitem" tabindex="0">Glaucoma Screening</li>
+          <li id="HEP_B_SCREEN_2" title="View Codes and Information About Hepatitis B Virus (HBV) Screening" role="menuitem" tabindex="0">Hepatitis B Virus (HBV) Screening</li>
+          <li id="HEP_B_2" title="View Codes and Information About Hepatitis B Virus Vaccine and Administration" role="menuitem" tabindex="0">Hepatitis B Virus (HBV) Vaccine and Administration</li>
+          <li id="HEP_C_2" title="View Codes and Information About Hepatitis C Virus Screening" role="menuitem" tabindex="0">Hepatitis C Virus (HCV) Screening</li>
+          <li id="HIV_2" title="View Codes and Information About Human Immunodeficiency Virus (HIV) Screening" role="menuitem" tabindex="0">Human Immunodeficiency Virus (HIV) Screening</li>
+          <li id="FLU_2" title="View Codes and Information About Influenza Virus Vaccine and Administration" role="menuitem" tabindex="0">Influenza Virus Vaccine and Administration</li>
+          <li id="IPPE_2" title="View Codes and Information About Initial Preventive Physical Examination - Also known as the “Welcome to Medicare Preventive Visit”" role="menuitem" tabindex="0">Initial Preventive Physical Examination (IPPE)</li>
+          <li id="CARDIO_IBT_2" class="telehealthButton" title="View Codes and Information About Intensive Behavioral Therapy (IBT) for Cardiovascular Disease (CVD)" role="menuitem" tabindex="0">*IBT for Cardiovascular Disease (CVD)</li>
+          <li id="OBESITY_IBT_2" class="telehealthButton" title="View Codes and Information About Intensive Behavioral Therapy (IBT) for Obesity" role="menuitem" tabindex="0">*IBT for Obesity</li>
+          <li id="LUNG_CAN_2" title="View Codes and Information About Lung Cancer Screening Counseling and Annual Screening for Lung Cancer With Low Dose Computed Tomography (LDCT)" role="menuitem" tabindex="0">Lung Cancer Screening</li>
+          <li id="MNT_2" class="telehealthButton" title="View Codes and Information About Medical Nutrition Therapy" role="menuitem" tabindex="0">*Medical Nutrition Therapy</li>
+          <li id="PNEUMO_2" title="View Codes and Information About Pneumococcal Vaccine and Administration" role="menuitem" tabindex="0">Pneumococcal Vaccine and Administration</li>
+          <li id="PROSTATE_CAN_2" title="View Codes and Information About Prostate Cancer Screening" role="menuitem" tabindex="0">Prostate Cancer Screening</li>
+          <li id="CERV_CAN_2" title="View Codes and Information About Cervical Cancer Screening" role="menuitem" tabindex="0">Screening for Cervical Cancer with Human Papillomavirus (HPV) Tests</li>
+          <li id="STI_2" class="telehealthButton" title="View Codes and Information About Screening for Sexually Transmitted Infections (STIs) and High Intensity Behavioral Counseling (HIBC) to Prevent STIs" role="menuitem" tabindex="0">*Screening for Sexually Transmitted Infections</li>
+          <li id="MAMMO_2" title="View Codes and Information About Screening Mammography" role="menuitem" tabindex="0">Screening Mammography</li>
+          <li id="PAP_2" title="View Codes and Information About Screening Pap Tests" role="menuitem" tabindex="0">Screening Pap Tests</li>
+          <li id="PELVIC_2" title="View Codes and Information About Screening Pelvic Examinations" role="menuitem" tabindex="0">Screening Pelvic Examinations</li>
+          <li id="ULTRASOUND_2" title="View Codes and Information About Ultrasound Screening for Abdominal Aortic Aneurysm (AAA)" role="menuitem" tabindex="0">Ultrasound Screening for Abdominal Aortic Aneurysm (AAA)</li>
+        </ul>
+        
+        <div class="targetAudience">
+        	<p><strong>Target Audience:</strong> Medicare Fee-For-Service Providers</p> 
+					<p>Watch the <a href="https://www.youtube.com/watch?v=-tuMWM4KeZg" tabindex="0" target="_blank">CMS Provider Minute: Preventive Services video</a> for pointers to help you submit sufficient documentation when billing for certain preventive services.</p> 
+					<p>You may provide some preventive services <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243327.html" tabindex="0" target="_blank">via telehealth</a> where you see the following symbol:<img src="images/Telehealth-Service.png" alt="Telehealth Service Icon"></p>
+     		</div>
+     		
+        <input type="submit" value="SUBMIT" aria-hidden="true">
+      </form>  
+      
+      
+      <div id="BUTTON_WRAP">
+       	<button class="topNav" id="SELECT" type="button" title="Open the Services Menu to Select a Service" tabindex="0">SELECT A SERVICE<!--<img src="images/grey1px.gif" alt=""><img src="images/grey1px.gif" alt="">--></button>
+        <button class="topNav" id="PRINT_BUTTON" type="button" title="Print Selected Services" tabindex="0" onClick="printOptionsMain()">PRINT SERVICES<!--<img src="images/grey1px.gif" alt=""><img src="images/grey1px.gif" alt="">--></button>
+        
+        <!--<button class="topNav twoLine" id="PDF_BUTTON" type="button" title="Open a PDF Version of This Product in a New Window" tabindex="0">TEXT-ONLY<br>PDF VERSION<img src="images/grey1px.gif" alt=""><img src="images/grey1px.gif" alt=""></button>-->
+        
+        <button class="topNav" id="RESOURCES_BUTTON" type="button" title="Scroll to the Resources Section" tabindex="0">RESOURCES<!--<img src="images/grey1px.gif" alt=""><img src="images/grey1px.gif" alt="">--></button>
+        
+        <button class="topNav twoLine" id="FAQ_BUTTON" type="button" title="Scroll to the Frequently Asked Questions Section" tabindex="0">FREQUENTLY ASKED QUESTIONS<!--<img src="images/grey1px.gif" alt=""><img src="images/grey1px.gif" alt="">--></button>
+      </div>
+    </nav>
+  </header>
+  
+<!--///////////////////////////////////////////////-->  
+  
+  <main>
+  	<div id="TELEHEALTH_ALERT" role="alert" aria-hidden="true">
+    	<img src="images/Telehealth-Service.png" alt="This Service is a Telehealth Services">
+    </div>
+    
+  	<article id="SERVICE" tabindex="-1">
+    	<div id="PRINT_STACK">
+      	<div id="ALC_MISUSE_STACK" class="print-only"></div>
+        <div id="AWV_STACK" class="print-only"></div>
+        <div id="BONE_MASS_STACK" class="print-only"></div>
+        <div id="CARDIO_DIS_STACK" class="print-only"></div>
+        <div id="COLO_CAN_STACK" class="print-only"></div>
+        <div id="TOBACCO_STACK" class="print-only"></div>
+        <div id="DEPRESSION_STACK" class="print-only"></div>
+        <div id="DIABETES_STACK" class="print-only"></div>
+        <div id="DIABETES_SELF_STACK" class="print-only"></div>
+        <div id="GLAUCOMA_STACK" class="print-only"></div>
+        <div id="HEP_B_SCREEN_STACK" class="print-only"></div>
+        <div id="HEP_B_STACK" class="print-only"></div>
+        <div id="HEP_C_STACK" class="print-only"></div>
+        <div id="HIV_STACK" class="print-only"></div>
+        <div id="FLU_STACK" class="print-only"></div>
+        <div id="IPPE_STACK" class="print-only"></div>
+        <div id="CARDIO_IBT_STACK" class="print-only"></div>
+        <div id="OBESITY_IBT_STACK" class="print-only"></div>
+        <div id="LUNG_CAN_STACK" class="print-only"></div>
+        <div id="MNT_STACK" class="print-only"></div>
+        <div id="PNEUMO_STACK" class="print-only"></div>
+        <div id="PROSTATE_CAN_STACK" class="print-only"></div>
+        <div id="CERV_CAN_STACK" class="print-only"></div>
+        <div id="STI_STACK" class="print-only"></div>
+        <div id="MAMMO_STACK" class="print-only"></div>
+        <div id="PAP_STACK" class="print-only"></div>
+        <div id="PELVIC_STACK" class="print-only"></div>
+        <div id="ULTRASOUND_STACK" class="print-only"></div>
+      </div>
+    </article>
+    
+  	<article id="FAQ" class="landing no-print" tabindex="-1">
+    	<h2>Frequently Asked Questions (FAQs)</h2>
+      
+      <div>
+      
+        <section>
+          <h3 class="question">When can CMS add new preventive services as Medicare benefits?</h3>
+          
+          <p class="answer">CMS may add coverage of preventive services through the National Coverage Determination (NCD) process if the service meets all of the following criteria:</p> 
+          
+          <ol>
+          	<li>Reasonable and necessary for the prevention or early detection of illness or disability</li>
+            <li>Recommended with a grade of A or B by the United States Preventive Services Task Force (USPSTF)</li>
+            <li>Appropriate for individuals entitled to benefits under Part A or enrolled under Part B of the Medicare Program</li>
+          </ol>
+			
+          <p>CMS may also add additional preventive services through statutory and regulatory authority.</p>
+          
+          <p>Visit the <a href="https://www.uspreventiveservicestaskforce.org/BrowseRec/Index" tabindex="0" target="_blank">USPSTF Published Recommendations</a> and the <a href="https://www.cms.gov/Medicare/Prevention/PrevntionGenInfo/Health-Observance-Messages.html" tabindex="0" target="_blank">Medicare Preventive Services Announcements</a> webpages for information on preventive services.</p>
+        </section>
+        
+        <section>
+          <h3 class="question">What is a primary care setting?</h3>
+          
+          <p class="answer">A primary care setting is defined as one that provides integrated, accessible health care services by clinicians who are accountable for addressing a large majority of personal health care needs, developing a sustained partnership with patients, and practicing in the context of family and community. Emergency departments, inpatient hospital settings, ambulatory surgical centers, independent diagnostic testing facilities, skilled nursing facilities, inpatient rehabilitation facilities, and hospices are not considered primary care settings under this definition.</p>
+        </section>
+        
+        <section>
+          <h3 class="question">How do I determine the last date a Medicare beneficiary got a preventive service so I know the beneficiary is eligible to get the next service and the service will not be denied due to frequency edits?</h3>
+          
+          <p class="answer">You have different options for accessing eligibility information. You may access the information through the CMS HIPAA Eligibility Transaction System (HETS) either directly or through your eligibility services vendor, through your Medicare Administrative Contractor (MAC) provider call center Interactive Voice Response (IVR) unit, or through the MAC provider web portal. Contact your eligibility service vendor or check with your <a href="http://go.cms.gov/MAC-website-list" tabindex="0" target="_blank">MAC’s eligibility services</a> for more information.</p>
+        </section>
+        
+        <section>
+          <h3 class="question">My patients do not follow up on routine preventive care. How can I help them remember when they are due for their next preventive service?</h3>
+          
+          <p class="answer">Medicare provides a <a href="https://www.medicare.gov/Pubs/pdf/11420-Preventive-Services-Card.pdf" tabindex="0" target="_blank">Preventive Services Checklist</a> you can give your patients so they can track their preventive services.</p>
+        </section>
+		  
+      </div>  
+      
+    </article><!-- #FAQ -->
+    
+    
+    <article id="RESOURCES" class="landing no-print" tabindex="-1">
+    	<h2>Resources</h2>
+      
+      <ul>
+      	<li>General Medicare Preventive Services Resources 
+        	<ul>
+          	<li><a href="https://www.cms.gov/Medicare/Prevention/PrevntionGenInfo" tabindex="0" target="_blank">CMS Webpage</a> <!--https://www.cms.gov/Medicare/Prevention/PrevntionGenInfo--></li>
+            
+            <li><a href="https://questions.cms.gov/faq.php" tabindex="0" target="_blank">FAQs</a></li>
+            
+            <li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/MedicarePreventiveServicesNationalEducationProducts.pdf" tabindex="0" target="_blank">Medicare Preventive Services National Educational Products</a></li>
+            
+            <li><a href="https://www.cms.gov/Medicare/Prevention/PrevntionGenInfo/Health-Observance-Messages.html" tabindex="0" target="_blank">Medicare Preventive Services Announcements</a></li>
+            
+            <li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/MLNPrevArticles.pdf" tabindex="0" target="_blank">MLN Matters&reg; Articles on Medicare-Covered Preventive Services</a></li>
+            
+            <li><a href="https://www.medicare.gov/Pubs/pdf/11420-Preventive-Services-Card.pdf" tabindex="0" target="_blank">Preventive Services Checklist</a></li>
+            
+            <li><a href="http://www.uspreventiveservicestaskforce.org/BrowseRec/Index" tabindex="0" target="_blank">USPSTF Published Recommendations</a></li>
+          </ul>
+        </li>
+        
+        <li>ICD-10 Information
+        	<ul>
+          	<li><a href="https://www.cms.gov/Medicare/Coverage/CoverageGenInfo/ICD10.html" tabindex="0" target="_blank">ICD-10 Information</a></li>
+          </ul>
+        </li> 
+        
+        <li>MAC Contact Information
+        	<ul>
+          	<li><a href="http://go.cms.gov/MAC-website-list" tabindex="0" target="_blank">MAC Contact Information</a></li>
+          </ul>
+        </li>
+        
+        <li>National Training Program Resources
+        	<ul>
+          	<li><a href="https://www.cms.gov/Outreach-and-Education/Training/CMSNationalTrainingProgram/National-Training-Program-Resources.html" tabindex="0" target="_blank">National Training Program Resources</a></li>
+          </ul>
+        </li> 
+        
+        <li>Regulations and Policies 
+        	<ul>
+          	<li><a href="https://www.gpo.gov/fdsys/browse/collectionCfr.action?collectionCode=CFR" tabindex="0" target="_blank">Code of Federal Regulations</a></li>
+            
+            <li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Internet-Only-Manuals-IOMs.html" tabindex="0" target="_blank">Internet-Only Manuals (IOMs)</a></li>
+            
+            <li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Transmittals" tabindex="0" target="_blank">Transmittals</a></li>
+          </ul>
+        </li>  
+        
+        <li>Related Medicare Learning Network&reg; (MLN) Products
+        	<ul>
+          	<!--<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/Guided_Pathways_Provider_Specific_Booklet.pdf" title="Opens a New Window to the Guided Pathway" tabindex="0" target="_blank">MLN Guided Pathways: Provider Specific Medicare Resources</a></li> deleted 101117 -->
+            
+            <li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1247538.html" tabindex="0" target="_blank">Medicare Enrollment for Providers Who Solely Order, Certify, or Prescribe</a></li>
+            
+            <li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html" tabindex="0" target="_blank">Resources for Medicare Beneficiaries</a></li>
+            
+            <li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243327.html" tabindex="0" target="_blank">Telehealth Services</a></li>
+          </ul>
+        </li> 
+      </ul> 
+  
+      
+    </article>  
+    
+    <article id="DISCLAIMERS" class="no-print" tabindex="-1">
+    	<h2>Disclaimers</h2>
+    	<section>
+     		<p>CPT codes, descriptions and other data only are copyright 2018 American Medical Association. All Rights Reserved. Applicable FARS/HHSAR apply. CPT is a registered trademark of the American Medical Association. Applicable FARS/HHSAR Restrictions Apply to Government Use. Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or dispense medical services. The AMA assumes no liability for data contained or not contained herein.</p>
+     	
+      	<p><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Product-Disclaimer.html" title="Opens a New Window to the Medicare Learning Network&reg; Product Disclaimer" tabindex="0" target="_blank">Medicare Learning Network&reg; Product Disclaimer</a></p>
+    
+    		<p>The Medicare Learning Network&reg;, MLN Connects&reg;, and MLN Matters&reg; are registered trademarks of the U.S. Department of Health &amp; Human <span class="noWrap">Services (HHS).</span></p>
+      </section>  
+    </article>
+    
+    <button type="button" id="TO_TOP" title="Scroll to the Top of the Page" tabindex="0" disabled><img src="images/upArrow.png" alt="Return to the Top of the Page"></button>
+
+  </main>
+  
+<!--///////////////////////////////////////////////-->   
+  
+  <footer>
+  	<div>
+      <ul>
+        <li><a href="#" title="Open the Services Menu to Select a Service" id="SELECT_FOOTER" onClick="return false;" tabindex="0">Select a Service</a></li>
+        <li><a href="#" title="Go to the Frequently Asked Questions Section" id="FAQ_FOOTER" onClick="return false;" tabindex="0">Frequently Asked Questions</a></li>
+        <li><a href="#" title="Go to the Resources Section" id="RES_FOOTER" onClick="return false;" tabindex="0">Resources</a></li>
+        <!--<li><a href="#" title="Open a PDF Version of This Product in a New Window" id="PDF_FOOTER" onClick="return false;" tabindex="0">Text-Only PDF Version</a></li>-->
+        <li><a href="#" title="Print Selected Services" id="PRINT_FOOTER" onClick="printOptionsMain()" tabindex="0">Print</a></li>
+      </ul>
+    </div>
+    <!--<div id="SOCIAL">
+    	<p>Check out CMS on:</p>
+      <ul>
+        <li><a href="https://twitter.com/CMSgov" title="Opens a New Window to the CMS Twitter Webpage" tabindex="0" target="_blank"><img src="images/Twitter-Logo-40.png" alt="Twitter"></a></li>
+        <li><a href="https://www.linkedin.com/company/centers-for-medicare-&-medicaid-services" title="Opens a New Window to the CMS LinkedIn Webpage" tabindex="0" target="_blank"><img src="images/LinkedIn-Logo-40.png" alt="Linked In"></a></li>
+        <li><a href="https://www.youtube.com/user/CMSHHSGov" title="Opens a New Window to the CMS YouTube Webpage" tabindex="0" target="_blank"><img src="images/You-Tube-Logo-40.png" alt="You Tube"></a></li>
+      </ul>
+    </div>-->
+  	<div id="LOGOS">
+      <img src="images/Centers-for-Medicare-and-Medicaid-Services-Logo-125-white.jpg" alt="Centers for Medicare and Medicaid Services Logo"><!--
+   
+   --><img src="images/Medicare-Learning-Network-Logo-125-white.jpg" alt="Medicare Learning Network Logo">
+    </div>
+  </footer>
+  
+  <aside id="PRINT_QUESTION" class="no-print" aria-hidden="true" tabindex="0">
+  	<div>
+    	<h2>PRINT OPTIONS</h2>
+      <p></p>
+      <div id="ALL_SERVICES">
+        <input type="checkbox" id="ALC_MISUSE_PRINT" name="printOption" value="AlcMisuse" tabindex="0" ><label for="ALC_MISUSE_PRINT">Alcohol Misuse Screening and Counseling</label>
+        <input type="checkbox" id="AWV_PRINT" name="printOption" value="AWV" tabindex="0" ><label for="AWV_PRINT">Annual Wellness Visit</label>
+        <input type="checkbox" id="BONE_MASS_PRINT" name="printOption" value="BoneMass" tabindex="0" ><label for="BONE_MASS_PRINT">Bone Mass Measurements</label>
+        <input type="checkbox" id="CARDIO_DIS_PRINT" name="printOption" value="CardioDis" tabindex="0" ><label for="CARDIO_DIS_PRINT">Cardiovascular Disease Screening Tests</label>
+        <input type="checkbox" id="COLO_CAN_PRINT" name="printOption" value="ColoCan" tabindex="0" ><label for="COLO_CAN_PRINT">Colorectal Cancer Screening</label>
+        <input type="checkbox" id="TOBACCO_PRINT" name="printOption" value="Tobacco" tabindex="0" ><label for="TOBACCO_PRINT">Counseling to Prevent Tobacco Use</label>
+        <input type="checkbox" id="DEPRESSION_PRINT" name="printOption" value="Depression" tabindex="0" ><label for="DEPRESSION_PRINT">Depression Screening</label>
+        <input type="checkbox" id="DIABETES_PRINT" name="printOption" value="Diabetes" tabindex="0" ><label for="DIABETES_PRINT">Diabetes Screening</label>
+        <input type="checkbox" id="DIABETES_SELF_PRINT" name="printOption" value="DiabetesSelf" tabindex="0" ><label for="DIABETES_SELF_PRINT">Diabetes Self-Management Training</label>
+        <input type="checkbox" id="GLAUCOMA_PRINT" name="printOption" value="Glaucoma" tabindex="0" ><label for="GLAUCOMA_PRINT">Glaucoma Screening</label>
+        <input type="checkbox" id="HEP_B_SCREEN_PRINT" name="printOption" value="HepBscreen" tabindex="0" ><label for="HEP_B_SCREEN_PRINT">HBV Screening</label>
+        <input type="checkbox" id="HEP_B_PRINT" name="printOption" value="HepB" tabindex="0" ><label for="HEP_B_PRINT">HBV Vaccine and Administration</label>
+        <input type="checkbox" id="HEP_C_PRINT" name="printOption" value="HepC" tabindex="0" ><label for="HEP_C_PRINT">HCV Screening</label>
+        <input type="checkbox" id="HIV_PRINT" name="printOption" value="HIV" tabindex="0" ><label for="HIV_PRINT">HIV Screening</label>
+        <input type="checkbox" id="FLU_PRINT" name="printOption" value="Flu" tabindex="0" ><label for="FLU_PRINT">Influenza Virus Vaccine and Administration</label>
+        <input type="checkbox" id="IPPE_PRINT" name="printOption" value="IPPE" tabindex="0" ><label for="IPPE_PRINT">IPPE</label>
+        <input type="checkbox" id="CARDIO_IBT_PRINT" name="printOption" value="CardioIBT" tabindex="0" ><label for="CARDIO_IBT_PRINT">IBT for Cardiovascular Disease</label>
+        <input type="checkbox" id="OBESITY_IBT_PRINT" name="printOption" value="ObesityIBT" tabindex="0" ><label for="OBESITY_IBT_PRINT">IBT for Obesity</label>
+        <input type="checkbox" id="LUNG_CAN_PRINT" name="printOption" value="LungCan" tabindex="0" ><label for="LUNG_CAN_PRINT">Lung Cancer Screening</label>
+        <input type="checkbox" id="MNT_PRINT" name="printOption" value="MNT" tabindex="0" ><label for="MNT_PRINT">Medical Nutrition Therapy</label>
+        <input type="checkbox" id="PNEUMO_PRINT" name="printOption" value="Pneumo" tabindex="0" ><label for="PNEUMO_PRINT">Pneumococcal Vaccine and Administration</label>
+        <input type="checkbox" id="PROSTATE_CAN_PRINT" name="printOption" value="ProstateCan" tabindex="0" ><label for="PROSTATE_CAN_PRINT">Prostate Cancer Screening</label>
+        <input type="checkbox" id="CERV_CAN_PRINT" name="printOption" value="CervCan" tabindex="0" ><label for="CERV_CAN_PRINT">Screening for Cervical Cancer with HPV Tests</label>
+        <input type="checkbox" id="STI_PRINT" name="printOption" value="STI" tabindex="0" ><label for="STI_PRINT">Screening for STIs and HIBC to Prevent STIs</label>
+        <input type="checkbox" id="MAMMO_PRINT" name="printOption" value="Mammo" tabindex="0" ><label for="MAMMO_PRINT">Screening Mammography</label>
+        <input type="checkbox" id="PAP_PRINT" name="printOption" value="Pap" tabindex="0" ><label for="PAP_PRINT">Screening Pap Tests</label>
+        <input type="checkbox" id="PELVIC_PRINT" name="printOption" value="Pelvic" tabindex="0" ><label for="PELVIC_PRINT">Screening Pelvic Examinations</label>
+        <input type="checkbox" id="ULTRASOUND_PRINT" name="printOption" value="Ultrasound" tabindex="0" ><label for="ULTRASOUND_PRINT">Ultrasound Screening for Abdominal Aortic Aneurysm</label>
+      </div>
+      <p>Would you like to print any of these sections as well?</p>
+      <div>
+        <input type="checkbox" id="FAQ_PRINT" name="printOption" value="FAQ" tabindex="0" ><label for="FAQ_PRINT">Frequently Asked Questions</label>
+        <input type="checkbox" id="RES_PRINT" name="printOption" value="RES" tabindex="0" ><label for="RES_PRINT">Resources</label>
+        <input type="checkbox" id="DIS_PRINT" name="printOption" value="DIS" tabindex="0" ><label for="DIS_PRINT">Disclaimers</label>
+      </div>
+      <div id="BUTTONS">
+      	<button type="button" id="PRINT_SEL" title="Continue to Print" tabindex="0">PRINT</button>
+      	<button type="button" id="CANCEL" title="Cancel Print" tabindex="0">CANCEL PRINT</button>
+      </div>
+    </div>
+  </aside>
+  
+<!--///////////////////////
+JS LINKS
+////////////////////////-->
+<script src="scripts/navigation.js"></script>
+<script src="scripts/services.js"></script>
+<script src="scripts/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+@charset "utf-8";
+/*CSS RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;outline:none;border:none;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ul{list-style:disc}ol{list-style:decimal;}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}button{margin:0;padding:0;outline:none;border:none;box-sizing:border-box;cursor:pointer;}abbr{border:none;outline:none;text-decoration:none;}
+
+html {font-family:Arial, Helvetica, sans-serif; font-size:100%;}
+
+body {}
+
+a#SKIPPER {position:absolute; top:-9999px;}
+
+*[aria-hidden=true] {display:none;}
+
+*[aria-hidden=false] {display:block;}
+
+ul#SERVICES button:focus, *[role=button]:focus {outline:1px dashed #FFFFFF inset; background-color:#2A2B66;}
+
+a:focus, button:focus, input:focus {outline:1px dashed #7089FF;}
+
+
+/* HEADER //////////////*/
+header {background:#00529B url(../images/coverPort2.jpg) no-repeat; background-attachment:scroll; width:100%; height:100vh; overflow:hidden; position:relative;}
+
+header h1 {font-family:Arial, Helvetica, sans-serif; font-weight:bold; width:100%; position:relative; box-sizing:border-box; background:#FFFFFF; border-bottom:1px #CCCCCC solid; color:#00529B;}
+
+header h1>span {display:none;}
+
+header h1 img {width:35%;}
+
+/*header img#ARC {width:23%; position:absolute; top:160px; left:0px; z-index:9996;}*/
+
+header nav {width:100%; position:absolute; background-color:#303030; overflow:visible; box-shadow:0px 0px 5px #000000; z-index:9997; border-bottom:2px #FFF solid;}
+
+header nav span#HHS {position:absolute; color:#000000; font-weight:400; text-align:center; width:100%; box-sizing:border-box;}
+
+header #LOGO {width:140px; height:135px; padding:0px 1% 0px 1%; left:0px; top:90px; z-index:9997; text-align:left; border-radius:195px 0px 0px 15px;}
+
+header #LOGO img {}
+
+header.scrolled #LOGO img {display:block;}
+
+header #ICN {position:absolute; width:auto; right:20px; bottom:0px; color:rgb(37,53,142); font-weight:bold; font-size:16px; -webkit-transition:right 0.3s ease-out; transition:right 0.3s ease-out; text-align:right;}
+
+header.scrolled #LOGO {background-color:rgba(255,255,255,0);}
+
+header.scrolled #ICN {right:120px;}
+
+header aside#PLEASE_NOTE {width:100%; position:fixed; right:0px; height:250px; margin-top:0px; background-color:#FFFFFF; box-shadow:0px 0px 20px #333333; bottom:0px; padding:40px 20px; z-index:9999; box-sizing:border-box; -webkit-transition:height 0.6s; transition:height 0.6s;}
+
+header aside#PLEASE_NOTE.closed {height:45px; padding-bottom:0px;}
+
+header aside#PLEASE_NOTE>p {margin-bottom:10px;}
+
+
+
+/* HEADER NAVIGATION /////*/
+button {font-family:'Archivo Narrow', Arial, Helvetica, sans-serif; position:relative; overflow:hidden; text-overflow:ellipsis; line-height:1;}
+
+nav button>img {position:absolute; top:-35px; left:18%; width:64%; height:1px; -webkit-transition:top 0.2s; transition:top 0.2s; -webkit-transition-timing-function:ease; transition-timing-function:ease;} /*ONE LINE BUTTON*/
+
+nav button>img+img {position:absolute; top:65px; left:18%; width:64%; height:1px; -webkit-transition:top 0.2s; transition:top 0.2s; -webkit-transition-timing-function:ease; transition-timing-function:ease;} /*ONE LINE BUTTON*/
+
+nav>div>button.twoLine>img, nav>div>button.twoLine>img+img {width:72%; left:14%;}
+
+nav>div>button:hover>img, nav>div>button:focus>img, nav button:hover>img, nav button:focus>img {top:14px;} /*ONE LINE BUTTON*/
+
+nav>div>button:hover>img+img, nav>div>button:focus>img+img, nav button:hover>img+img, nav button:focus>img+img {top:43px;} /*ONE LINE BUTTON*/
+
+nav>div>button.twoLine:hover>img, nav>div>button.twoLine:focus>img {top:4px;} /*TWO LINE BUTTON*/
+
+nav>div>button.twoLine:hover>img+img, nav>div>button.twoLine:focus>img+img {top:55px;} /*TWO LINE BUTTON*/
+
+header nav button.topNav {font-family:'Fjalla One', Arial, Helvetica, sans-serif; line-height:1.1; display:block; height:100%; margin:0px; color:rgb(211,211,210); background-color:rgb(30,30,30); border:1px #666666; border-style:none solid; float:right; padding:0 5px; box-sizing:border-box;}
+
+header nav button#SELECT {position:absolute; top:0px; left:0px;}
+
+header nav button#SELECT:hover, header nav button:focus, header nav button:hover {background-color:rgb(70,70,70); color:#CDF0FF;}
+
+header nav button#SELECT.opened img {top:29px; left:20px; width:20px; transform:rotate(45deg);}
+
+header nav button#SELECT.opened img+img {transform:rotate(-45deg);}
+
+header nav button#RESOURCES_BUTTON {border-left:none;}
+
+header nav ul#SERVICES {height:calc(100vh - 340px); position:absolute; left:-100%; top:0px; z-index:-1; list-style:none; pointer-events:none; box-sizing:border-box; border-left:2px #FFFFFF solid; -webkit-transition:height 0.6s; transition:height 0.6s;}
+
+header nav.fixed ul#SERVICES {height:calc(100vh - 195px);}
+
+header nav ul#SERVICES.closed {height:calc(100vh - 560px);}
+
+header nav.fixed ul#SERVICES.closed {height:calc(100vh - 415px);}
+
+header nav ul#SERVICES.openMenu {left:0%;}
+
+header nav ul#SERVICES li {float:left; box-sizing:border-box;}
+
+header nav ul#SERVICES li button {height:100%; padding:5px; background-color:rgba(0,15,57,1); color:#FFFFFF; -webkit-transition:background-color 0.4s; transition:background-color 0.4s; letter-spacing:0.01em; font-weight:400; pointer-events:auto;}
+
+header nav ul#SERVICES li button.telehealthButton img {margin-bottom:-5px;}
+
+header nav ul#SERVICES li button:hover {background-color:#CEEFFF; color:#333333; box-shadow:inset 0px 0px 20px #327DAD;}
+
+header nav ul#SERVICES li#TELEHEALTH {font-family:'Archivo Narrow', Arial, Helvetica, sans-serif; float:none; clear:both; width:100%; height:60px; padding:0px; border:none; position:absolute; top:-60px; z-index:9999; text-align:left; font-size:90%; pointer-events:all;}
+
+header nav ul#SERVICES li#TELEHEALTH button, header nav ul#SERVICES li#TELEHEALTH button:hover {height:70px; padding:20px 5px 20px 0px; outline:none; color:#000000; cursor:default; text-align:left; background-color:transparent; box-shadow:none;}
+
+header nav ul#SERVICES li#TELEHEALTH img, header nav ul#SERVICES li#TELEHEALTH p {}
+
+header nav ul#SERVICES li#TELEHEALTH img {height:20px; width:auto; vertical-align:middle; margin-left:5px;}
+
+header nav ul#SERVICES li#TELEHEALTH p {width:100%;}
+
+div#BUTTON_WRAP {position:absolute; top:0px; right:0px; height:100%;}
+
+
+/* MAIN SECTION ///////*/
+main {width:100%; height:auto; background-color:#FFFFFF;}
+
+main #TELEHEALTH_ALERT {text-align:right; position:relative; left:-300px; display:none; -webkit-transition:left 0.3s; transition:left 0.3s;}
+
+main button#TO_TOP {font-family:'Fjalla One', Arial, Helvetica, sans-serif; font-size:1.2em; position:fixed; bottom:0px; right:10px; width:100px; height:40px; background-color:rgba(0,0,0,0.5); padding:0; border-radius:10px 10px 0px 0px; display:none; z-index:9999; text-align:center; color:rgb(211,211,210);}
+
+main button#TO_TOP:hover, main button#TO_TOP:focus {height:45px;}
+
+main button#TO_TOP>img {top:0px; left:0px; width:100%; height:40px;}
+
+main article {height:auto; padding:0px; border-bottom:1px #CCCCCC solid;}
+
+main #SERVICE {height:0px; box-sizing:border-box; margin-bottom:0px; box-shadow:none;}
+
+main #SERVICE #WRAPPER, main #RESOURCES, main #FAQ,main #DISCLAIMERS {height:auto; min-height:100vh; background-color:#F4F4F4; box-sizing:border-box;}
+
+main #SERVICE #WRAPPER>div, main #FAQ div {width:100%; -webkit-column-count:2; -moz-column-count:2; -o-column-count:2; column-count:2;-webkit-column-gap:80px; -moz-column-gap:80px; -o-column-gap:80px; column-gap:80px; -webkit-column-rule:1px #CCCCCC solid; -moz-column-rule:1px #CCCCCC solid; -o-column-rule:1px #CCCCCC solid; column-rule:1px #CCCCCC solid; -webkit-margin-before:0; -webkit-margin-after:0; margin-top:30px; column-fill:balance; -webkit-column-break-inside: avoid; /*page-break-inside:avoid; break-inside:avoid;*/}
+
+main #RESOURCES ul {margin-top:30px;}
+
+main #RESOURCES ul ul {margin-top:-3px;}
+
+main #SERVICE.longService #WRAPPER>div {-webkit-column-count:1; -moz-column-count:1; -o-column-count:1; column-count:1;}
+
+main #SERVICE #WRAPPER button, #CLOSE_HYPER {font-family:'Fjalla One', Arial, Helvetica, sans-serif; width:auto; height:auto; background-color:#DFDFDF; border-radius:10px; float:right; margin:3px 0 15px 20px; padding:10px 30px; box-sizing:border-box; position:relative; font-size:15px; color:#000000;}
+
+#WRAPPER div.box {font-family:Arial, Helvetica, sans-serif; width:50%; height:auto; background-color:#EAF6F1; border-radius:10px; float:right; margin:3px 0 15px 20px; padding:10px 30px; box-sizing:border-box; position:relative; font-size:1em; color:#000000;}
+
+main #SERVICE.view {height:auto; min-height:100vh;}
+
+main article h2 {font-family:'Archivo Narrow', Arial, Helvetica, sans-serif; font-weight:700; font-size:1.6em; margin-bottom:10px; color:#0D3B72;}
+
+main article section {margin-bottom:30px; display:block; -webkit-column-break-inside: avoid; /*page-break-inside:avoid; break-inside:avoid;*/}
+
+main article section h3 {font-family:'Archivo Narrow', Arial, Helvetica, sans-serif; font-weight:700; font-size:1.4em; margin-bottom:14px; padding-bottom:5px; border-bottom:1px solid; color:#374F1B; -webkit-column-break-inside: avoid; /*page-break-inside:avoid; break-inside:avoid; break-after:avoid;*/}
+
+main article section h4 {font-family:'Archivo Narrow', Arial, Helvetica, sans-serif; font-weight:700; font-size:1.1em; margin-bottom:10px; color:#000000; -webkit-column-break-inside: avoid; /*page-break-inside:avoid; break-inside:avoid; break-after:avoid;*/}
+
+main article p, main article section ul, main article section dl {font-size:1em; line-height:1.2; margin-bottom:15px; -webkit-column-break-inside: avoid; /*page-break-inside:avoid; break-inside:avoid;*/}
+
+main article li {font-weight:bold; list-style:none; margin-top:10px;}
+
+main article li+li {margin-top:25px;}
+
+main article li ul {margin-left:20px;}
+
+main article li a {font-weight:normal; /*display:block;*/}
+
+
+/* MAIN SERVICES SECTION ///////*/
+main #SERVICE h2+p {color:#0D3B72;}
+
+main #SERVICE dt {float:left; font-weight:bold;}
+
+main #SERVICE dt.group {float:none; display:inline;}
+
+main #SERVICE dd {margin-bottom:4px; padding-left:63px;}
+
+main #SERVICE dd.long {}
+
+main #SERVICE dt.group+dd {display:inline;}
+
+main #SERVICE dt.group+dd+dt {display:block; margin-top:4px;}
+
+main #SERVICE dt.group+dd+dt+dd {margin-top:4px;}
+
+main #SERVICE dd.noPad {padding-left:0px;}
+
+main #SERVICE dd ul {margin-left:15px;}
+
+main #SERVICE p+ul {margin-top:-8px;}
+
+main #SERVICE ul, #PLEASE_NOTE ul {margin-left:25px;}
+
+#PLEASE_NOTE .note {margin-top:10px;}
+
+main #SERVICE li {font-weight:normal; list-style:disc;}
+
+main #SERVICE li li {list-style:circle; margin-top:5px;}
+
+main #SERVICE li+li {margin-top:5px;}
+
+
+/* DISCLAIMERS, RESOURCES & FAQ ///////*/
+main #FAQ ol {margin-bottom:15px;}
+
+main #FAQ li {list-style:decimal outside; font-weight:normal; margin:7px 0 0 30px; line-height:1.2;}
+
+main #RESOURCES li {margin-top:15px;}
+
+main #RESOURCES li>a {line-height:1.2;}
+
+main #DISCLAIMERS {min-height:0px; border:none; background-color:#202020; color:#EEEEEE; position:relative; box-shadow:0px 0px 18px #333333;}
+
+main #DISCLAIMERS h2, main #DISCLAIMERS h3 {color:#EEEEEE;}
+
+main #DISCLAIMERS a {color:#00ABFF; display:inline;}
+
+main #DISCLAIMERS ul li {list-style:disc; font-weight:normal; margin-left:20px; font-size:85%;}
+
+
+/* FOOTER /////////*/
+footer {width:100%; height:160px; padding:15px 0 45px 5%; background-color:#303030; position:relative; z-index:9996; display:table; box-sizing:border-box; color:#FFFFFF;}
+
+footer div {display:table-cell; margin-left:25px; vertical-align:top;}
+
+footer #SOCIAL {text-align:center;}
+
+footer ul {list-style:none; margin-top:6px}
+
+footer ul li {height:25px; margin-bottom:5px; font-size:13px;}
+
+footer a {padding:5px; background-color:#202020; color:#FFFFFF; border-radius:5px; text-decoration:none;}
+
+footer a:hover {background-color:#004BA4;}
+
+footer #SOCIAL ul li {display:inline;}
+
+footer #SOCIAL a {background:none;}
+
+footer #LOGOS {float:right; margin-top:-15px;}
+
+footer #LOGOS img {margin-left:5px;}
+
+
+/* MISC //////////*/
+.bold {font-weight:bold;}
+
+.whiteBackground {background-color:#FFFFFF !important;}
+
+.noWrap {white-space:nowrap;}
+
+.print-only, .hidden {display:none;}
+
+.showMe {display:block !important;}
+
+.noScroll {overflow:hidden !important;}
+
+.note {margin-left:60px; position:relative;}
+
+.note>strong {font-weight:bold; position:absolute; left:-60px;}
+
+.note>strong + strong {position:relative; left:0px;}
+
+.disclaimer {font-size:85%; margin-top:50px;}
+
+.targetAudience {font-size:85%; color:#FFF; margin-top:10px;}
+
+.targetAudience p {margin-top:10px; line-height:1.1;}
+
+.targetAudience a {color:aqua;}
+
+.targetAudience img {position:relative; top:5px; width:25px; margin:-5px 0 0 5px; display:inline;}
+
+/* PRINT OPTIONS //////////*/
+#PRINT_QUESTION {width:100vw; height:100vh; position:fixed; top:0px; left:50%; margin-left:-50vw; z-index:9999; box-sizing:border-box; background-color:rgba(0,0,0,0.8); overflow:hidden;}
+
+#PRINT_QUESTION>div {width:80%; height:auto; max-height:90%; background-color:#FFFFFF; margin:2.5% auto; padding:25px; box-sizing:border-box; box-shadow:0px 0px 20px #000000; border-radius:20px;}
+
+#PRINT_QUESTION div * {margin-bottom:5px; line-height:1.1;}
+
+#PRINT_QUESTION div h2 {padding-bottom:3px; border-bottom:1px solid;}
+
+#PRINT_QUESTION div p>button {padding:3px 6px; font-size:14px;}
+
+#PRINT_QUESTION div>div {margin:12px 0; position:relative;}
+
+#PRINT_QUESTION div#ALL_SERVICES {margin:12px 0; display:none; height:21vh; overflow:auto;}
+
+#PRINT_QUESTION div>div>label {width:100%; display:block; padding:5px 5px 5px 30px; margin:2px 0; box-sizing:border-box; background-color:#EFEFEF; border-radius:5px; cursor:pointer; font-size:13px;}
+
+#PRINT_QUESTION div#ALL_SERVICES>label {font-size:13px; border-radius:5px 0 0 5px;}
+
+#PRINT_QUESTION div>div>input {position:absolute; margin-top:7px;}
+
+#PRINT_QUESTION div>button {padding:10px 30px; margin:0 auto; font-size:16px; background-color:#CFCFCF; border-radius:5px;}
+
+#PRINT_QUESTION div#BUTTONS {text-align:center;}
+
+#PRINT_STACK {position:absolute; left:-9999px; width:1000px;}
+
+
+/* HYPERLINK TABLE //////////*/
+#HYPERLINKS {overflow:auto;}
+
+#HYPERLINKS h2 {margin-right:125px;}
+
+#HYPERLINKS>div {font-size:0.9em;}
+
+#HYPERLINKS button {margin-left:-110px;}
+
+#HYPERLINKS table {box-sizing:border-box;}
+
+#HYPERLINKS table th, #HYPERLINKS table td {padding:5px; border:1px #000000 solid;}
+
+#HYPERLINKS table a {display:block; word-break:break-all;}
+
+caption {text-align:left; font-weight:bold; margin:10px 125px 10px 0;}
+
+
+
+@media screen and (min-width: 0px) {
+header {background-size:cover;  background-position:-20vw 50px;}
+
+header img {top:-9999px; position:relative;}
+	
+header h1 {height:40px; padding-top:3px; top:-40px; text-align:center; font-size:4.2vw; z-index:-1;}
+
+header nav span#HHS {bottom:auto; top:-35px; font-size:1.8vw; line-height:1; display:none;}
+
+header nav {height:40px; top:40px; position:fixed;}
+
+header nav>div {width:100%;}
+	
+header nav button.topNav {width:20%; font-size:2.7vw;}
+
+header nav>div>button.topNav {width:25%;}
+
+header nav button#SELECT {border-right:none;}
+
+header nav button#SELECT.opened {padding-left:0px;}
+
+header nav button.topNav img {display:none;}
+	
+header nav ul#SERVICES {display:none;}
+
+header nav form#SERVICES_SELECT {box-sizing:border-box; width:100vw; height:100vh; background-color:rgba(0,0,0,0.8); padding:5px 10%; position:fixed; z-index:9999; top:0px; left:0px; bottom:0px;}
+
+header nav form#SERVICES_SELECT button, header nav form#SERVICES_SELECT button:hover {width:100%; height:40px; background:#FFFFFF; color:#000; margin:0 0 40px 0;}
+
+header nav form#SERVICES_SELECT button img {width:100%; height:auto;}
+
+header nav form#SERVICES_SELECT h2 {width:100%; text-align:center; color:#FFFFFF; font-weight:bold; font-size:5.5vw; margin-bottom:10px; display:block;}
+
+/* NEW MOBILE NAV */
+header nav form#SERVICES_SELECT ul {width:100%; height:65px; margin-top:5px; font-size:16px; border:none; overflow:hidden; background-color:#FFFFFF; cursor:pointer; text-align:center; list-style:none;}
+
+header nav form#SERVICES_SELECT ul.open {height:40vh; overflow-y:auto;}
+
+header nav form#SERVICES_SELECT ul.open li {height:auto; padding:8px;}
+
+header nav form#SERVICES_SELECT ul li {height:45px; padding-top:25px;}
+
+header nav form#SERVICES_SELECT ul li:focus {background-color:#EEEEEE;}
+/* END NEW */
+
+header nav form#SERVICES_SELECT #TELEHEALTH_2 {color:#FFFFFF; display:table; width:100%;}
+
+header nav ul#SERVICES li#TELEHEALTH {padding-left:10px;}
+
+header nav ul#SERVICES li#TELEHEALTH div img {width:40px; display:table-cell; vertical-align:middle;}
+
+header nav ul#SERVICES li#TELEHEALTH div p {display:table-cell; vertical-align:middle;}
+
+header nav form#SERVICES_SELECT #TELEHEALTH_2>div {display:table-cell; vertical-align:middle; font-size:0.8em;}
+
+header nav ul#SERVICES li#TELEHEALTH>div {display:table; text-align:left; position:absolute; top:8px; color:#FFFFFF; margin-left:200px; font-size:13px; width:auto;}
+
+header nav form#SERVICES_SELECT #TELEHEALTH_2>div:first-of-type {font-size:26px;}
+
+header nav form#SERVICES_SELECT>p {margin-top:15px; color:#FFFFFF; line-height:1.2;}
+
+header nav ul#SERVICES.openMenu, header nav ul#SERVICES_SELECT.openMenu {width:100%;}
+
+header nav ul#SERVICES li, header nav ul#SERVICES_SELECT li {width:100%; height:40px; border:none; margin:2px auto; text-align:center;}
+
+header nav ul#SERVICES li button.telehealthButton img {width:20px;}
+
+header nav ul#SERVICES li button {width:90%; line-height:1; border-radius:10px;}
+
+header nav ul#SERVICES li button.telehealthButton img {width:20px;}
+
+header nav ul#SERVICES li#TELEHEALTH button img {top:-25px;}
+
+header #LOGO {position:absolute;}
+
+header #LOGO img {}
+
+main #TELEHEALTH_ALERT {width:90px; top:132px; margin-top:-55px;}
+
+main #TELEHEALTH_ALERT img {width:50px; margin-top:10px;}
+
+main #SERVICE #WRAPPER, main #RESOURCES, main #FAQ {padding:130px 30px 110px 30px;}
+
+main #DISCLAIMERS {padding:40px 30px 30px 30px;}
+	
+main #SERVICE #WRAPPER>div, main #FAQ div {-webkit-column-count:1; -moz-column-count:1; -o-column-count:1; column-count:1;}
+
+.showMeLeft {display:block !important; left:-20px !important;}	
+	
+main #RESOURCES li>a {display:inline-block; word-break:break-all;}	
+	
+footer #LOGOS {display:none;}
+
+footer {font-size:80%;}
+
+footer ul li {font-size:75%;}
+
+#PRINT_QUESTION div>button {width:100%; margin-top:3px;}
+
+#PRINT_QUESTION p {font-size:14px;}
+
+header aside#PLEASE_NOTE {height:auto; font-size:13px;}
+
+header aside#PLEASE_NOTE.closed {height:40px; font-size:13px; padding-top:45px;}
+
+header aside#PLEASE_NOTE>button {width:200px; height:30px; position:absolute; top:8px; font-size:16px; background-color:#A9C3FF; border-radius:5px;}
+
+header aside#PLEASE_NOTE.closed >button {width:50px;}
+
+header aside#PLEASE_NOTE.closed>button>span+span {display:none;} }
+
+
+@media screen and (max-height: 389px) {
+	#PRINT_QUESTION div#BUTTONS {width:40%; top:2%; position:absolute; right:12.5%; text-align:right;}
+	
+	#PRINT_QUESTION div#BUTTONS button {width:auto; height:30px; padding:5px;} }
+
+
+@media screen and (min-width: 500px) {
+header h1 {height:40px; padding-top:3px; top:0px; font-size:3.7vw; position:fixed;}
+
+header nav span#HHS {bottom:auto; top:-35px; padding-right:1%; font-size:1.8vw; line-height:1; display:block; text-align:right;}
+
+header nav {height:40px; top:40px;}	
+	
+header nav button.topNav {width:20%; font-size:13px;}
+
+header nav button#SELECT {border-right:none;}
+
+header nav button#SELECT.opened {padding-left:0px;}
+
+header nav button.topNav img {display:none;}
+	
+/*header nav ul#SERVICES {width:100%; padding-top:42px}
+
+header nav ul#SERVICES.openMenu {width:100.5%;}
+
+header nav ul#SERVICES li {width:33.32%; height:9%; min-height:40px;}
+
+header nav ul#SERVICES li button.telehealthButton img {width:20px;}
+
+header nav ul#SERVICES li button {font-size:2.25vw; line-height:1;}
+
+header nav ul#SERVICES li button.telehealthButton img {width:20px;}
+
+header nav ul#SERVICES li#TELEHEALTH button img {top:-25px;}*/
+
+header #LOGO {position:absolute; z-index:9997;}
+
+main #SERVICE #WRAPPER, main #RESOURCES, main #FAQ {padding:130px 40px 110px 40px;}
+
+main #DISCLAIMERS {padding:40px 40px 30px 40px;}
+	
+main #SERVICE #WRAPPER>div, main #FAQ div {-webkit-column-count:1; -moz-column-count:1; -o-column-count:1; column-count:1;}
+
+.showMeLeft {display:block !important; left:-8px !important;}
+
+header aside#PLEASE_NOTE {font-size:13px;}
+
+header aside#PLEASE_NOTE.closed>button {width:200px;}
+
+header aside#PLEASE_NOTE>button>span+span {display:inline !important;} 
+
+footer {font-size:100%;}
+
+footer ul li {font-size:100%;} }
+
+.green {font: #007A00;}
+
+@media screen and (min-width: 980px) {
+header {background-size:100%; background-position:60% 200px;}	
+
+header img {top:0px; z-index:9999;}
+	
+header aside#PLEASE_NOTE {font-size:16px; height:260px; z-index:9999;}
+	
+header h1 {height:78px; padding-top:35px; top:-78px; text-align:center; font-size:2em; position:relative;}	
+
+header nav {height:40px; top:200px; position:absolute;}
+
+header nav>div {width:100%;}
+
+header nav span#HHS {bottom:-37px; top:auto; font-size:14px; padding-left:10%; text-align:center;}
+
+header nav button.topNav, header nav>div>button.topNav {width:33.3%; font-size:15px;}
+
+header nav button#SELECT {width:33.4%; font-size:18px;}
+
+header nav button#SELECT {border-right:1px #666666 solid;}
+
+header nav button#SELECT.opened {padding-left:20px;}
+	
+	header nav button#SELECT.opened::before {content:'\2715  '; position:relative; top:-1px;}
+	
+header nav button#PRINT_BUTTON {position:absolute; top:-170px; right:50px; height:35px; width:auto; background-color:transparent; border:2px #FFF solid; border-radius:6px; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#FFF; padding:0 7px;}
+
+header nav button.topNav img {display:block;}
+	
+header nav ul#SERVICES {width:60%; top:102px; display:block;}
+
+header nav ul#SERVICES.openMenu {width:100%;}
+
+header nav ul#SERVICES li {width:14.28%; height:25%; border:2px #FFFFFF; border-style:none solid solid none; margin:0; background-color:#FFFFFF;}
+
+header nav ul#SERVICES li button {width:100%; line-height:1.05; border-radius:0px;}
+	
+#SERVICES_SELECT {display:none;}
+	
+header nav.fixed {position:fixed; top:50px;}
+
+header #LOGO {position:fixed; top:53px; height:auto; z-index:9999;} 
+
+header #LOGO img {width:125px;}
+
+main #SERVICE #WRAPPER, main #RESOURCES, main #FAQ {padding:180px 160px 110px 100px;}
+
+main #SERVICE #WRAPPER button {font-size:18px;}
+
+main #DISCLAIMERS {padding:40px 160px 30px 100px;}
+
+main #TELEHEALTH_ALERT {top:215px; margin-top:-55px;}
+
+.showMeLeft {display:block !important; left:0px !important;}
+	
+main #RESOURCES li>a {display:inline; word-break:normal;}	
+
+footer #LOGOS {width:285px; display:block;}
+
+footer #LOGOS img {width:90px; top:140px;}
+
+#PRINT_QUESTION div>button {width:auto;}
+
+#PRINT_QUESTION p {font-size:16px;}
+
+p#INTRO {text-align:left; margin-top:4px; line-height:1.1;}	 }
+
+
+@media screen and (min-width: 1200px) {
+main #SERVICE #WRAPPER>div, main #FAQ div {-webkit-column-count:2; -moz-column-count:2; -o-column-count:2; column-count:2;-webkit-column-gap:80px; -moz-column-gap:80px; -o-column-gap:80px; column-gap:80px; -webkit-column-rule:1px #CCCCCC solid; -moz-column-rule:1px #CCCCCC solid; -o-column-rule:1px #CCCCCC solid; -webkit-margin-before:0; -webkit-margin-after:0; column-rule:1px #CCCCCC solid; margin-top:30px;} 
+
+footer #LOGOS {width:390px; display:block;}
+
+footer #LOGOS img {width:125px;} }
+
+
+@media screen and (min-width: 1400px) {
+header nav button.topNav, header nav>div>button.topNav {font-size:16px;}
+	
+header nav ul#SERVICES li button {font-size:15px; line-height:1.35;}
+
+header nav ul#SERVICES li button.telehealthButton img {width:30px; margin-bottom:-8px;}
+
+header nav ul#SERVICES li#TELEHEALTH>div {font-size:14px;}
+	
+header nav.fixed {position:fixed; top:50px;}
+
+main #TELEHEALTH_ALERT {width:150px; top:260px; margin-top:-90px;}
+
+main #TELEHEALTH_ALERT img {width:90px;}
+
+main #SERVICE #WRAPPER, main #RESOURCES, main #FAQ,main #DISCLAIMERS {padding:200px 160px 110px 160px;}
+
+main #DISCLAIMERS {padding:50px 160px 40px 160px;}
+
+p#INTRO {font-size:16px; line-height:1.1;} }
+
+
+@media screen and (min-width: 980px) and (max-height: 750px) {
+header nav ul#SERVICES li button {font-size:16px; line-height:1.1;}
+
+header nav ul#SERVICES.closed li button {font-size:12px;} }
